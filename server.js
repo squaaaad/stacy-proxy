@@ -26,6 +26,9 @@ app.get('/api/restaurants/:id/sidebar', (req, res) => {
 app.get('/api/restaurants/:id/recommendations', (req, res) => {
   res.redirect(`http://52.89.102.101/api/restaurants/${req.params.id}/recommendations`)
 });
+app.get('/api/restaurants/:id/reviews', (req, res) => {
+  res.redirect(`http://54.153.115.227/api/restaurants/${req.params.id}/reviews`)
+});
 
 app.listen(port, () => {
   console.log(`server running at: http://localhost:${port}`)
