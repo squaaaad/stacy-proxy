@@ -1,0 +1,26 @@
+{
+  "name": "proxy-server-stacy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamboo-connection/proxy-server-stacy.git"
+  },
+  "author": "Stacy Lin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bamboo-connection/proxy-server-stacy/issues"
+  },
+  "homepage": "https://github.com/bamboo-connection/proxy-server-stacy#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "request": "^2.83.0"
+  }
+}

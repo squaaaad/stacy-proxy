@@ -1,0 +1,19 @@
+#container{
+  display: flex;
+  flex-direction: column;
+}
+#middle{
+  margin-top: 40px;
+  display:flex;
+}
+#overview-wrapper{
+  margin: 0 40px;
+}
+#sidebar-app{
+  margin-right: 40px;
+  z-index: 1;
+}
+#recommendations-app{
+  margin-top: 40px;
+  z-index: 2;
+}
