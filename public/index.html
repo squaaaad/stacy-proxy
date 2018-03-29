@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:300,400,500,700" rel="stylesheet">
     <link rel="icon" href="http://res.cloudinary.com/madlicorice/image/upload/v1520448614/WeGot-favicon.ico" type="image/x-icon">
     <title>WeGot</title>
   </head>
@@ -20,10 +19,36 @@
       </div>
       <div id="recommendations-app"></div>
     </div>
-    <script src="http://13.57.148.57/restaurants/id/bundle.js"></script>
-    <script src="http://184.169.248.150/restaurants/id/bundle.js"></script>
-    <script src="http://54.153.115.227/reviews/content/bundle.js"></script>
-    <script src="http://54.177.233.239/bundle.js"></script>
-    <script src="http://52.89.102.101/bundle.js"></script>
+    <!--<script src="http://13.57.148.57/restaurants/id/bundle.js"></script>-->
+    <!-- <script src="http://load-balancer-131821345.us-west-1.elb.amazonaws.com/restaurants/id/bundle.js"></script> -->
+    <!-- <script src="http://54.153.115.227/reviews/content/bundle.js"></script> -->
+    <!-- <script src="http://54.177.233.239/bundle.js"></script> -->
+    <!-- <script src="http://52.89.102.101/bundle.js"></script> -->
+
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <!-- <script src="http://localhost:3001/app.js"></script> -->
+    <script src="http://localhost:3002/app.js"></script>
+    <!-- <script src="http://localhost:3003/app.js"></script> -->
+    <!-- <script src="http://localhost:3004/app.js"></script> -->
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      // ReactDOM.render(
+      //   React.createElement(Info),
+      //   document.getElementById('Info')
+      // );
+      ReactDOM.render(
+        React.createElement(Overview),
+        document.getElementById('overview-app')
+      );
+      // ReactDOM.render(
+      //   React.createElement(Related),
+      //   document.getElementById('Related')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(Reviews),
+      //   document.getElementById('Reviews')
+      // );
+    </script>
   </body>
 </html>
