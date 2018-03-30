@@ -1,23 +1,14 @@
 {
-  "name": "proxy-server-stacy",
+  "name": "SDCDemo",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "server": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon -i ./public/services -i ./templates/services ./server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bamboo-connection/proxy-server-stacy.git"
-  },
-  "author": "Stacy Lin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bamboo-connection/proxy-server-stacy/issues"
-  },
-  "homepage": "https://github.com/bamboo-connection/proxy-server-stacy#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -31,7 +22,6 @@
     "node-fetch": "^2.1.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "request": "^2.85.0",
     "webpack": "^3.11.0"
   }
 }
